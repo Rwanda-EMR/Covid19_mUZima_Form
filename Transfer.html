@@ -12,7 +12,7 @@
     <script src="js/jquery-autocomplete-min.js"></script>
     <script src="js/muzima.js"></script>
 
-    <title>NURSING CARE PLAN</title>
+    <title>TRANSFER FORM</title>
 </head>
 <body class="col-md-10 col-md-offset-1">
 <div id="pre_populate_data"></div>
@@ -96,31 +96,101 @@
     </div>
 
     <div class="section">
-        <h3>CARE PLAN</h3>
+        <h3>VITAL SIGNS</h3>
         <fieldset>
             <div class="form-group">
-                <label>Nursing assessment: </label>
-                <textarea class="form-control" id="obs.NursingAssessment" name="obs.NursingAssessment" type="text"  rows="2" data-concept="13644^NursingAssessment^99DCT"></textarea>
+                <label for="obs.Tepmerature">Tepmerature (oC):</label>
+                <input id="obs.Tepmerature" class="form-control" name="obs.Tepmerature" type="number" data-concept="5088^Tepmerature (oC)^99DCT"/>
             </div>
             <div class="form-group">
-                <label>Nursing Diagnosis: </label>
-                <textarea class="form-control" id="obs.NursingDiagnosis" name="obs.NursingDiagnosis" type="text"  rows="2" data-concept="13645^NursingDiagnosis^99DCT"></textarea>
+                <label for="obs.Weight">Weight (kg):</label>
+                <input id="obs.Weight" class="form-control" name="obs.Weight" type="number" data-concept="5089^Weight (kg)^99DCT"/>
             </div>
             <div class="form-group">
-                <label>Nursing objectives : </label>
-                <textarea class="form-control" id="obs.NursingObjectives " name="obs.NursingObjectives" type="text"  rows="2" data-concept="13646^NursingObjectives^99DCT"></textarea>
+                <label for="obs.height">Height (CM):</label>
+                <input id="obs.height" class="form-control" name="obs.height" type="number" data-concept="5090^Height (CM)^99DCT"/>
             </div>
             <div class="form-group">
-                <label>Nursing intervention: </label>
-                <textarea class="form-control" id="obs.NursingIntervention" name="obs.NursingIntervention" type="text"  rows="2" data-concept="13647^NursingIntervention^99DCT"></textarea>
+                <label for="obs.SBP">SBP:</label>
+                <input id="obs.SBP" class="form-control" name="obs.SBP" type="number" data-concept="5085^SBP^99DCT"/>
             </div>
             <div class="form-group">
-                <label>Nursing Evaluation: </label>
-                <textarea class="form-control" id="obs.NursingEvaluation" name="obs.NursingEvaluation" type="text"  rows="2" data-concept="13648^NursingEvaluation^99DCT"></textarea>
+                <label for="obs.DBP">DBP:</label>
+                <input id="obs.DBP" class="form-control" name="obs.DBP" type="number" data-concept="5086^DBP^99DCT"/>
+            </div>
+            <div class="form-group">
+                <label for="obs.Pulse">Pulse:</label>
+                <input id="obs.Pulse" class="form-control" name="obs.Pulse" type="number" data-concept="5087^Pulse^99DCT"/>
+            </div>
+            <div class="form-group">
+                <label for="obs.Saturation">Saturation:</label>
+                <input id="obs.Saturation" class="form-control" name="obs.Saturation" type="number" data-concept="5092^Saturation^99DCT"/>
+            </div>
+            <div class="form-group">
+                <label>Soins Infirmiers: </label>
+                <textarea class="form-control" id="obs.SoinsInfirmiers" name="obs.SoinsInfirmiers" type="text"  rows="2" data-concept="1364^SoinsInfirmiers^99DCT"></textarea>
+            </div>
+            <div class="form-group">
+                <label>Observations: </label>
+                <textarea class="form-control" id="obs.Observations" name="obs.Observations" type="text"  rows="2" data-concept="1391^Observations^99DCT"></textarea>
             </div>
         </fieldset>
     </div>
     <hr/>
+
+    <div class="form-group Covid19_Sites">
+        <label for="Covid19_Sites">
+            TRANSFER DESTINATION
+        </label>
+        <select class="form-control" id="Covid19_Sites" name="Covid19_Sites" required="" data-concept="107291^Covid19 Sites^99DCT">
+            <option value="">...</option>
+            <option value="107218^Hill top Hotel^99DCT">Hill top Hotel</option>
+            <option value="107218^Masoro ^99DCT">Masoro </option>
+            <option value="107218^Kicukiro (Kagarama) ^99DCT">Kicukiro (Kagarama) </option>
+            <option value="107218^Nyarutarama VIP ^99DCT">Nyarutarama VIP </option>
+            <option value="107218^La Parisse Treatment Center ^99DCT">La Parisse Treatment Center </option>
+            <option value="107218^La Parisse Quarantine^99DCT">La Parisse Quarantine</option>
+            <option value="107218^Palast Rock ^99DCT">Palast Rock </option>
+            <option value="107218^Noblezza ^99DCT">Noblezza </option>
+            <option value="107218^Kanyinya Treatment Center ^99DCT">Kanyinya Treatment Center </option>
+            <option value="107218^Muhanga (Kabgayi) ^99DCT">Muhanga (Kabgayi) </option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="Timeoftransferout">Transfer Date:</label>
+        <input class="form-control date_picker Date today-date" id="obs.Timeoftransferout" name="obs.Timeoftransferout" data-concept="12098^Discharge Date:^99DCT" type="date">
+    </div>
+    <div class="form-group">
+        <label>REASON FOR TRANSFER: </label>
+        <textarea class="form-control" id="obs.REASONFORTRANSFEROUT" name="obs.REASONFORTRANSFEROUT" type="text"  rows="2" data-concept="3004^REASONFORTRANSFEROUT^99DCT"></textarea>
+    </div>
+    <div class="form-group differential_count">
+        <label for="diagnosis">DIAGNOSIS</label>
+        <select class="form-control" id="diagnosis" name="diagnosis" required="required" data-concept="f1bec2f8-ce26-4fb8-a4fb-68bf7a34381d^Diagnosis^99DCT">
+            <option value="">...</option>
+            <option value="cf64f9d4-d38a-11e8-b6e2-0c5b8f279a64^DAYS^99DCT">Coronavirus infection, unspecified - B342</option>
+            <option value="cf6520bd-d38a-11e8-b6e2-0c5b8f279a64^DAYS^99DCT">Coronavirus as the cause of diseases classified elsewhere - B972</option>
+            <option value="cf6520f1-d38a-11e8-b6e2-0c5b8f279a64^DAYS^99DCT">Oth coronavirus as the cause of diseases classd elswhr - B9729</option>
+            <option value="cf6a6236-d38a-11e8-b6e2-0c5b8f279a64^DAYS^99DCT">Pneumonia due to SARS-associated coronavirus - J1281</option>
+            <option value="cf6520d7-d38a-11e8-b6e2-0c5b8f279a64^DAYS^99DCT">SARS-associated coronavirus causing diseases classd elswhr - B9721</option>
+            <option value="1079^CONTINUOUS^99DCT">Continuous</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label>Other clinical diagnosis:</label>
+        <textarea class="form-control" id="obs.OtherDiagnosis" name="obs.OtherDiagnosis" type="text"  rows="2" data-concept="6731^OtherDiagnosis^99DCT"></textarea>
+    </div>
+
+    <div class="form-group">
+        <label>Treatment details:</label>
+        <textarea class="form-control" id="obs.Treatment" name="obs.Treatment" type="text"  rows="2" data-concept="107287^Treatment^99DCT"></textarea>
+    </div>
+
+    <div class="form-group">
+        <label>Clinical summary:</label>
+        <textarea class="form-control" id="obs.ClinicalSummary" name="obs.ClinicalSummary" type="text"  rows="2" data-concept="1364^ClinicalSummary^99DCT"></textarea>
+    </div>
 
     <div>
         <input id="save_draft" name="save_draft" type="submit" value="Draft"/>
@@ -174,5 +244,4 @@
             });
         });
 </script>
-
 </html>
