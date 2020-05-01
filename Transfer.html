@@ -11,14 +11,14 @@
     <script src="js/additional-methods.min.js"></script>
     <script src="js/jquery-autocomplete-min.js"></script>
     <script src="js/muzima.js"></script>
-
-    <title>TRANSFER FORM</title>
 </head>
 <body class="col-md-10 col-md-offset-1">
 <div id="pre_populate_data"></div>
 <form id="VitalSigns_form" name="VitalSigns_form">
+
     <div class="section">
         <fieldset>
+            <h2>TRANSFER FORM</h2>
             <h3>Encounter Details</h3>
             <div class="form-group">
                 <label for="encounter.location_id">Location Name:<span class="required">*</span></label>
@@ -99,7 +99,7 @@
         <h3>VITAL SIGNS</h3>
         <fieldset>
             <div class="form-group">
-                <label for="obs.Tepmerature">Tepmerature (oC):</label>
+                <label for="obs.Tepmerature">Temperature (oC):</label>
                 <input id="obs.Tepmerature" class="form-control" name="obs.Tepmerature" type="number" data-concept="5088^Tepmerature (oC)^99DCT"/>
             </div>
             <div class="form-group">
@@ -126,39 +126,48 @@
                 <label for="obs.Saturation">Saturation:</label>
                 <input id="obs.Saturation" class="form-control" name="obs.Saturation" type="number" data-concept="5092^Saturation^99DCT"/>
             </div>
-            <div class="form-group">
-                <label>Soins Infirmiers: </label>
-                <textarea class="form-control" id="obs.SoinsInfirmiers" name="obs.SoinsInfirmiers" type="text"  rows="2" data-concept="1364^SoinsInfirmiers^99DCT"></textarea>
-            </div>
-            <div class="form-group">
-                <label>Observations: </label>
-                <textarea class="form-control" id="obs.Observations" name="obs.Observations" type="text"  rows="2" data-concept="1391^Observations^99DCT"></textarea>
-            </div>
         </fieldset>
     </div>
     <hr/>
 
     <div class="form-group Covid19_Sites">
+        <h3>TRANSFER INFORMATION</h3>
         <label for="Covid19_Sites">
             TRANSFER DESTINATION
         </label>
         <select class="form-control" id="Covid19_Sites" name="Covid19_Sites" required="" data-concept="107291^Covid19 Sites^99DCT">
             <option value="">...</option>
-            <option value="107218^Hill top Hotel^99DCT">Hill top Hotel</option>
-            <option value="107218^Masoro ^99DCT">Masoro </option>
-            <option value="107218^Kicukiro (Kagarama) ^99DCT">Kicukiro (Kagarama) </option>
-            <option value="107218^Nyarutarama VIP ^99DCT">Nyarutarama VIP </option>
-            <option value="107218^La Parisse Treatment Center ^99DCT">La Parisse Treatment Center </option>
-            <option value="107218^La Parisse Quarantine^99DCT">La Parisse Quarantine</option>
-            <option value="107218^Palast Rock ^99DCT">Palast Rock </option>
-            <option value="107218^Noblezza ^99DCT">Noblezza </option>
-            <option value="107218^Kanyinya Treatment Center ^99DCT">Kanyinya Treatment Center </option>
-            <option value="107218^Muhanga (Kabgayi) ^99DCT">Muhanga (Kabgayi) </option>
+            <option value="107292^Hilltop Hotel^99DCT">Hilltop Hotel</option>
+            <option value="107293^Masoro^99DCT">Masoro </option>
+            <option value="107294^Kicukiro (Kagarama)^99DCT">Kicukiro (Kagarama) </option>
+            <option value="107295^Nyarutarama VIP^99DCT">Nyarutarama VIP </option>
+            <option value="107296^Lapallise Treatment Center^99DCT">Lapallise Treatment Center </option>
+            <option value="107297^Lapallise Quarantine^99DCT">Lapallise Quarantine</option>
+            <option value="107298^Palast Rock^99DCT">Palast Rock </option>
+            <option value="107299^Noblezza^99DCT">Noblezza </option>
+            <option value="107300^Kanyinya Treatment Center^99DCT">Kanyinya Treatment Center </option>
+            <option value="107301^Muhanga (Kabgayi)^99DCT">Muhanga (Kabgayi) </option>
+            <option value="107309^Kicukiro IPRC ^99DCT">Kicukiro IPRC </option>
         </select>
     </div>
 
+
     <div class="form-group">
-        <label for="Timeoftransferout">Transfer Date:</label>
+        <fieldset>
+            <h4>COVID19 UNITY TO TRANSFER IN</h4>
+            <label>
+                <input id="obs.Covid19Isolation" name="obs.Covid19ManagementUnits" type="checkbox" data-concept="107304^Covid19 Management Units^99DCT" value="107303^PATIENT TRANSFERRED OUT^99DCT">
+                Covid19 Isolation
+            </label>
+            <label>
+                <input id="obs.Covid19treatment" name="obs.Covid19ManagementUnits" type="checkbox" data-concept="107304^Covid19 Management Units^99DCT" value="107302^Covid19 treatment^99DCT">
+                Covid19 treatment
+            </label>
+        </fieldset>
+    </div>
+
+    <div class="form-group">
+        <label for="obs.Timeoftransferout">Transfer Date:</label>
         <input class="form-control date_picker Date today-date" id="obs.Timeoftransferout" name="obs.Timeoftransferout" data-concept="12098^Discharge Date:^99DCT" type="date">
     </div>
     <div class="form-group">
@@ -167,14 +176,13 @@
     </div>
     <div class="form-group differential_count">
         <label for="diagnosis">DIAGNOSIS</label>
-        <select class="form-control" id="diagnosis" name="diagnosis" required="required" data-concept="f1bec2f8-ce26-4fb8-a4fb-68bf7a34381d^Diagnosis^99DCT">
+        <select class="form-control" id="diagnosis" name="diagnosis"  data-concept="f1bec2f8-ce26-4fb8-a4fb-68bf7a34381d^Diagnosis^99DCT">
             <option value="">...</option>
             <option value="cf64f9d4-d38a-11e8-b6e2-0c5b8f279a64^DAYS^99DCT">Coronavirus infection, unspecified - B342</option>
             <option value="cf6520bd-d38a-11e8-b6e2-0c5b8f279a64^DAYS^99DCT">Coronavirus as the cause of diseases classified elsewhere - B972</option>
             <option value="cf6520f1-d38a-11e8-b6e2-0c5b8f279a64^DAYS^99DCT">Oth coronavirus as the cause of diseases classd elswhr - B9729</option>
             <option value="cf6a6236-d38a-11e8-b6e2-0c5b8f279a64^DAYS^99DCT">Pneumonia due to SARS-associated coronavirus - J1281</option>
             <option value="cf6520d7-d38a-11e8-b6e2-0c5b8f279a64^DAYS^99DCT">SARS-associated coronavirus causing diseases classd elswhr - B9721</option>
-            <option value="1079^CONTINUOUS^99DCT">Continuous</option>
         </select>
     </div>
     <div class="form-group">
@@ -190,11 +198,6 @@
     <div class="form-group">
         <label>Clinical summary:</label>
         <textarea class="form-control" id="obs.ClinicalSummary" name="obs.ClinicalSummary" type="text"  rows="2" data-concept="1364^ClinicalSummary^99DCT"></textarea>
-    </div>
-
-    <div>
-        <input id="save_draft" name="save_draft" type="submit" value="Draft"/>
-        <input id="submit_form" name="submit_form" type="submit" value="submit"/>
     </div>
 </form>
 

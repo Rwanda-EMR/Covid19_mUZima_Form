@@ -162,56 +162,76 @@
                 <input id="obs.COUNTRY OF ORIGIN" class="form-control" name="obs.COUNTRY OF ORIGIN" type="text"
                        data-concept="0e566650-6e39-4b9c-8154-683366d3a3ae^COUNTRY OF ORIGIN^99DCT"/>
             </div>
-             <h3> COMMUNITY CASE </h3>
+             <h3> LOCAL CLUSTER </h3>
+              <div class="form-group">
+                  <label for="obs.CASE CONTACT(NAMES)">CASE CONTACT(NAMES):</label>
+                  <input id="obs.CASE CONTACT(NAMES)" class="form-control" name="obs.CASE CONTACT(NAMES)" type="text"
+                         data-concept="e412ed2d-7fb6-4122-b69a-aeb8259a6c9f^CASE CONTACT(NAMES)^99DCT"/>
+              </div>
+
+                <div class="form-group">
+                    <label for="obs.LAST DATE OF EXPOSE">LAST DATE OF EXPOSURE(dd/mm/yyyy):</label>
+                    <input id="obs.LAST DATE OF EXPOSE" class="form-control" name="obs.LAST DATE OF EXPOSE" type="text"
+                           data-concept="8d04ca4e-98fb-4961-bf97-1c64382948e1^LAST DATE OF EXPOSE^99DCT"/>
+                </div>
+
+                <div>
+                    <label for="differential_count">SITE OF EXPOSURE:</label>
+                    <select class="form-control" id="SITE OF EXPOSURE"
+                            name="SITE OF EXPOSURE"
+                            data-concept="c4f897cb-fd25-459b-9899-0401f8be7ba4^SITE OF EXPOSURE^99DCT">
+                        <option value="">...</option>
+                        <option value="87d44dec-31a9-4843-a7cf-7440e5ac7d18^CHURCHES^99DCT">CHURCHES</option>
+                        <option value="3cded370-26fe-102b-80cb-0017a47871b2^SCHOOLS^99DCT">SCHOOLS</option>
+                        <option value="7db44084-ad91-47a9-9093-08d87a552b67^SALOON^99DCT">SALOON</option>
+                        <option value="f46d630e-2d49-43a5-8d43-e934b7e3b5c0^BAR^99DCT">BAR</option>
+                        <option value="3cdc9916-26fe-102b-80cb-0017a47871b2^AT WORK^99DCT">AT WORK</option>
+                        <option value="fddeccf6-bc83-47cf-975e-eaa4d14de64d^HEALTH FACILITY^99DCT">HEALTH FACILITY</option>
+                    </select>
+                    <div class="form-group freetext">
+                        <label for="freetext_general_ose">OTHER SITE OF EXPOSURE</label>
+                        <textarea class="form-control" id="freetext_general_ose" name="freetext_general"
+                                  type="text" data-concept="c33b96ee-26ba-4d36-80cc-edbbdb542e96^OTHER SITE OF EXPOSURE^99DCT"></textarea>
+                    </div>
+                </div>
+            <label for="differential_count">LOCATION OF EXPOSURE:</label>
              <div class="form-group">
-                 <label for="obs.PROVINCE OF ORIGIN">PROVINCE OF ORIGIN:</label>
-                 <input id="obs.PROVINCE OF ORIGIN" class="form-control" name="obs.PROVINCE OF ORIGIN" type="text"
-                        data-concept="27394056-12ea-4928-bc5c-e5a1e1860f2a^PROVINCE OF ORIGIN^99DCT"/>
+                 <label for="obs.PROVINCE(LOCATION OF EXPOSURE)">PROVINCE:</label>
+                 <input id="obs.PROVINCE(LOCATION OF EXPOSURE)" class="form-control" name="obs.PROVINCE(LOCATION OF EXPOSURE)" type="text"
+                        data-concept="27394056-12ea-4928-bc5c-e5a1e1860f2a^PROVINCE(LOCATION OF EXPOSURE)^99DCT"/>
               </div>
               <div class="form-group">
-                  <label for="obs.DISTRICT OF ORIGIN">DISTRICT OF ORIGIN:</label>
-                  <input id="obs.DISTRICT OF ORIGIN" class="form-control" name="obs.DISTRICT OF ORIGIN" type="text"
-                           data-concept="b5d85769-adbe-48dd-8169-00d3ea2c7c53^DISTRICT OF ORIGIN^99DCT"/>
+                  <label for="obs.DISTRICT(LOCATION OF EXPOSURE)">DISTRICT:</label>
+                  <input id="obs.DISTRICT(LOCATION OF EXPOSURE)" class="form-control" name="obs.DISTRICT(LOCATION OF EXPOSURE)" type="text"
+                           data-concept="b5d85769-adbe-48dd-8169-00d3ea2c7c53^DISTRICT(LOCATION OF EXPOSURE)^99DCT"/>
               </div>
                 <div class="form-group">
-                    <label for="obs.PROVINCE OF DESTINATION">PROVINCE OF DESTINATION:</label>
-                    <input id="obs.PROVINCE OF DESTINATION" class="form-control" name="obs.PROVINCE OF DESTINATION" type="text"
-                           data-concept="032d1f2c-2083-4fd4-b1e3-b93d7fb79461^PROVINCE OF DESTINATION^99DCT"/>
+                    <label for="obs.SECTOR(LOCATION OF EXPOSURE)">SECTOR</label>
+                    <input id="obs.SECTOR(LOCATION OF EXPOSURE)" class="form-control" name="obs.SECTOR(LOCATION OF EXPOSURE)" type="text"
+                           data-concept="032d1f2c-2083-4fd4-b1e3-b93d7fb79461^SECTOR(LOCATION OF EXPOSURE)^99DCT"/>
                 </div>
                 <div class="form-group">
-                    <label for="obs.COUNTRY OF ORIGIN">DISTRICT OF DESTINATION:</label>
-                    <input id="obs.DISTRICT OF DESTINATION:" class="form-control" name="obs.DISTRICT OF DESTINATION:" type="text"
-                           data-concept="2f1c5fb7-5093-42b7-8f17-6809c5f10951^DISTRICT OF DESTINATION:^99DCT"/>
+                    <label for="obs.VILLAGE(LOCATION OF EXPOSURE)">VILLAGE</label>
+                    <input id="obs.VILLAGE(LOCATION OF EXPOSURE)" class="form-control" name="obs.VILLAGE(LOCATION OF EXPOSURE)" type="text"
+                           data-concept="2f1c5fb7-5093-42b7-8f17-6809c5f10951^VILLAGE(LOCATION OF EXPOSURE)^99DCT"/>
                 </div>
             </fieldset>
         </div>
 
 
     <div class="section">
-        <h3>CASE CONTACT INFORMATION</h3>
+        <h3>COMMUNITY CASE</h3>
         <fieldset>
-            <div class="form-group">
-                <label for="obs.CASE CONTACT(NAMES)">CASE CONTACT(NAMES):</label>
-                <input id="obs.CASE CONTACT(NAMES)" class="form-control" name="obs.CASE CONTACT(NAMES)" type="text"
-                       data-concept="e412ed2d-7fb6-4122-b69a-aeb8259a6c9f^CASE CONTACT(NAMES)^99DCT"/>
+            <div>
+                <label for="differential_count">ORIGIN</label>
+                <select class="form-control" id="ORIGIN"
+                        name="ORIGIN"
+                        data-concept="9ad59053-88d2-4f23-bafb-e302f5146efd^ORIGIN^99DCT">
+                    <option value="">...</option>
+                    <option value="b25c93e3-a6ca-4d67-8475-1ba924c77663^SELF REPORT^99DCT">SELF REPORT</option>
+                    <option value="fddeccf6-bc83-47cf-975e-eaa4d14de64d^HEALTH FACILITY^99DCT">HEALTH FACILITY</option>
+                </select>
             </div>
-
-            <div class="form-group">
-                <label for="obs.LAST DATE OF EXPOSE">LAST DATE OF EXPOSE(dd/mm/yyyy):</label>
-                <input id="obs.LAST DATE OF EXPOSE" class="form-control" name="obs.LAST DATE OF EXPOSE" type="text"
-                       data-concept="8d04ca4e-98fb-4961-bf97-1c64382948e1^LAST DATE OF EXPOSE^99DCT"/>
-            </div>
-<!--            <div>
-            <label for="differential_count">SELF REPORT WITH SYMPTOMS:</label>
-            <select class="form-control" id="SELF REPORT WITH SYMPTOMS"
-                    name="SELF_REPORT_WITH_SYMPTOMS" required="required"
-                    data-concept="a34c24b8-1c09-43ae-a091-e6bbe709b7b8^SELF REPORT WITH SYMPTOMS^99DCT">
-                <option value="">...</option>
-                <option value="3cd6f600-26fe-102b-80cb-0017a47871b2^YES^99DCT">YES</option>
-                <option value="3cd6f86c-26fe-102b-80cb-0017a47871b2^NO^99DCT">NO</option>
-            </select>
-            </div>-->
-
             <div>
                 <label for="differential_count">SELF REPORT WITH SYMPTOMS:</label>
                 <select class="form-control" id="SELF REPORT WITH SYMPTOMS"
@@ -293,208 +313,6 @@
             </div>
         </fieldset>
     </div>
-
-    <!--=======================================================================================-->
-    <!--<div class="section">
-        <h3>VITAL SIGNS</h3>
-        <fieldset>
-            <div class="form-group">
-                <label for="obs.Tepmerature">Temperature (oC):</label>
-                <input id="obs.Tepmerature" class="form-control" name="obs.Tepmerature" type="number" data-concept="5088^Tepmerature (oC)^99DCT"/>
-            </div>
-            <div class="form-group">
-                <label for="obs.Weight">Weight (kg):</label>
-                <input id="obs.Weight" class="form-control" name="obs.Weight" type="number" data-concept="5089^Weight (kg)^99DCT"/>
-            </div>
-            <div class="form-group">
-                <label for="obs.height">Height (CM):</label>
-                <input id="obs.height" class="form-control" name="obs.height" type="number" data-concept="5090^Height (CM)^99DCT"/>
-            </div>
-            <div class="form-group">
-                <label for="obs.SBP">SBP:</label>
-                <input id="obs.SBP" class="form-control" name="obs.SBP" type="number" data-concept="5085^SBP^99DCT"/>
-            </div>
-            <div class="form-group">
-                <label for="obs.DBP">DBP:</label>
-                <input id="obs.DBP" class="form-control" name="obs.DBP" type="number" data-concept="5086^DBP^99DCT"/>
-            </div>
-            <div class="form-group">
-                <label for="obs.Pulse">Pulse:</label>
-                <input id="obs.Pulse" class="form-control" name="obs.Pulse" type="number" data-concept="5087^Pulse^99DCT"/>
-            </div>
-            <div class="form-group">
-                <label for="obs.Saturation">Saturation:</label>
-                <input id="obs.Saturation" class="form-control" name="obs.Saturation" type="number" data-concept="5092^Saturation^99DCT"/>
-            </div>
-        </fieldset>
-    </div>
--->
-    <!--=======================================================================================-->
-    <!--<hr/>
-    <h3> CLINICAL HISTORY </h3>
-    <hr/>
-    <fieldset>
-        <h4>General Examination</h4>
-        <div class="form-group freetext">
-            <label for="freetext_general_ch">General Status</label>
-            <textarea class="form-control" id="freetext_general_gs" name="freetext_general"
-                      type="text" data-concept="c6cf5b47-d240-409b-be1c-c3ce7ca5c424^General Status"></textarea>
-        </div>
-        <h4>CHIEF COMPLAINTS</h4>
-        <label>
-            <input id="obs.SYMPTOMPRESENT" name="obs.SYMPTOMPRESENT" type="checkbox"
-                   data-concept="3cd95a58-26fe-102b-80cb-0017a47871b2^SYMPTOM PRESENT^99DCT"
-                   value="3cf1898e-26fe-102b-80cb-0017a47871b2^FEVER^99DCT">
-            FEVER
-        </label>
-        <label>
-            <input id="obs.ScreeningThoughPapSmear" name="obs.ScreeningThough" type="checkbox"
-                   data-concept="3cd95a58-26fe-102b-80cb-0017a47871b2^SYMPTOM PRESENT^99DCT"
-                   value="3cd24178-26fe-102b-80cb-0017a47871b2^HEADACHE^99DCT">
-            HEADACHE
-        </label>
-        <label>
-            <input id="obs.ScreeningThoughHPVDNATest" name="obs.ScreeningThough" type="checkbox"
-                   data-concept="3cd95a58-26fe-102b-80cb-0017a47871b2^SYMPTOM PRESENT^99DCT"
-                   value="3ce14056-26fe-102b-80cb-0017a47871b2^DRY COUGH^99DCT">
-            DRY COUGH
-        </label>
-        <label>
-            <input id="obs.PositivePastScreeningResult" name="obs.PastScreeningResult" type="checkbox"
-                   data-concept="3cd95a58-26fe-102b-80cb-0017a47871b2^SYMPTOM PRESENT^99DCT"
-                   value="3ccd2364-26fe-102b-80cb-0017a47871b2^CHEST PAIN^99DCT">
-            CHEST PAIN
-        </label>
-        <label>
-            <input id="obs.NegativePastScreeningResult" name="obs.PastScreeningResult" type="checkbox"
-                   data-concept="3cd95a58-26fe-102b-80cb-0017a47871b2^SYMPTOM PRESENT^99DCT"
-                   value="3cccc7ac-26fe-102b-80cb-0017a47871b2^RHEUMATISM^99DCT">
-            RHEUMATISM
-        </label>
-        <label>
-            <input id="obs.NegativePastScreeningResultps" name="obs.PastScreeningResult" type="checkbox"
-                   data-concept="3cd95a58-26fe-102b-80cb-0017a47871b2^SYMPTOM PRESENT^99DCT"
-                   value="8292a426-3f05-4ea0-b960-4df5ccbb93f3^DIFFICULTY BREATHING^99DCT">
-            DIFFICULTY BREATHING
-        </label>
-        <label>
-            <input id="obs.ResultsNotReceivedPastScreeningResult" name="obs.PastScreeningResult" type="checkbox"
-                   data-concept="3cd95a58-26fe-102b-80cb-0017a47871b2^SYMPTOM PRESENT^99DCT"
-                   value="3ce50fec-26fe-102b-80cb-0017a47871b2^LOSS OF APPETITE^99DCT">
-            LOSS OF APPETITE
-        </label>
-
-        <label>
-            <input id="obs.TypeOfTreatmentPerformedCryotherapy" name="obs.TypeOfTreatmentPerformed" type="checkbox"
-                   data-concept="3cd95a58-26fe-102b-80cb-0017a47871b2^SYMPTOM PRESENT^99DCT"
-                   value="3ccdf8d4-26fe-102b-80cb-0017a47871b2^ABDOMINAL PAIN^99DCT">
-            ABDOMINAL PAIN
-        </label>
-        <label>
-            <input id="obs.TypeOfTreatmentPerformedThermoAblation" name="obs.TypeOfTreatmentPerformed" type="checkbox"
-                   data-concept="3cd95a58-26fe-102b-80cb-0017a47871b2^SYMPTOM PRESENT^99DCT"
-                   value="b694aa46-7543-46ac-ad86-80e501a82289^AGITATION^99DCT">
-            AGITATION
-        </label>
-        <label>
-            <input id="obs.TypeOfTreatmentPerformedLEEP" name="obs.TypeOfTreatmentPerformed" type="checkbox"
-                   data-concept="3cd95a58-26fe-102b-80cb-0017a47871b2^SYMPTOM PRESENT^99DCT"
-                   value="f48fb2a9-9276-4096-b297-a41f903b8621^NECK PAIN^99DCT">
-            NECK PAIN
-        </label>
-
-        <div class="form-group freetext">
-            <label for="freetext_general_ch">Other Complaints</label>
-            <textarea class="form-control" id="freetext_general_ot" name="freetext_general"
-                      type="text" data-concept="3cdd258e-26fe-102b-80cb-0017a47871b2^SYMPTOM COMMENT^99DCT"></textarea>
-        </div>
-
-        <div class="form-group freetext">
-            <label for="freetext_general_hi">HISTORY OF PRESENT ILLNESS</label>
-            <textarea class="form-control" id="freetext_general_hi" name="freetext_general"
-                      type="text" data-concept="24aa74e0-a281-4031-8919-63f3eaf3a729^History of the present illness^99DCT"></textarea>
-        </div>
-
-
-        <div class="form-group freetext">
-            <label for="freetext_general_ch">PAST MEDICAL HISTORY</label>
-            <textarea class="form-control" id="freetext_general_ch" name="freetext_general"
-                      type="text" data-concept="bc3862d8-6825-4878-8801-f1e7b0790071^PAST MEDICAL HISTORY^99DCT"></textarea>
-        </div>
-    </fieldset>-->
-    <!-- =========================================================================================== -->
-    <!--<hr/>
-    <h3> PHYSICAL EXAMINATION/SYSTEMIC REVIEW </h3>
-    <hr/>
-
-    <fieldset>
-        <div class="section">
-            <div class="form-group freetext">
-                <label for="freetext_general_c">CENTRAL NERVEOUS SYSTEM (Glasgow, Reflexes, Muscle Power And Tonicity, Sensitivity and Motricity)</label>
-                <textarea class="form-control" id="freetext_general_c" name="freetext_general"
-                          type="text" data-concept="2145^FREETEXT GENERAL^99DCT"></textarea>
-            </div>
-
-            <div class="form-group freetext">
-                <label for="freetext_general_ca">CARDIOVASCULAR SYSTEM</label>
-                <textarea class="form-control" id="freetext_general_ca" name="freetext_general"
-                          type="text" data-concept="2143^FREETEXT GENERAL^99DCT"></textarea>
-            </div>
-
-            <div class="form-group freetext">
-                <label for="freetext_general_r">RESPIRATORY SYSTEM</label>
-                <textarea class="form-control" id="freetext_general_r" name="freetext_general"
-                          type="text" data-concept="2141^FREETEXT GENERAL^99DCT"></textarea>
-            </div>
-
-            <div class="form-group freetext">
-                <label for="freetext_general_g">GASTRO-INTESTINAL TRACT</label>
-                <textarea class="form-control" id="freetext_general_g" name="freetext_general"
-                          type="text" data-concept="2144^FREETEXT GENERAL^99DCT"></textarea>
-            </div>
-
-            <div class="form-group freetext">
-                <label for="freetext_general_ge">GENITOURINARY SYSTEM</label>
-                <textarea class="form-control" id="freetext_general_ge" name="freetext_general"
-                          type="text" data-concept="2149^FREETEXT GENERAL^99DCT"></textarea>
-            </div>
-            <div class="form-group freetext">
-                <label for="freetext_general_m">MUSCULOSKELETAL</label>
-                <textarea class="form-control" id="freetext_general_m" name="freetext_general"
-                          type="text" data-concept="2147^FREETEXT GENERAL^99DCT"></textarea>
-            </div>
-            <div class="form-group freetext">
-                <label for="freetext_general_cl">CLINICAL SUMMARY</label>
-                <textarea class="form-control" id="freetext_general_cl" name="freetext_general"
-                          type="text" data-concept="9633^FREETEXT GENERAL^99DCT"></textarea>
-            </div>
-        </div>
-    </fieldset>
--->
-<!--    <hr/>
-    <h3> DIAGNOSIS </h3>
-    <hr/>
-    <div class="form-group differential_count">
-        <label for="differential_count">
-            DIFFERENTIAL DIAGNOSIS
-        </label>
-        <select class="form-control" id="differential_count"
-                name="differential_count" required="required"
-                data-concept="f1bec2f8-ce26-4fb8-a4fb-68bf7a34381d^Corona Virus Diagnosis^99DCT">
-            <option value="">...</option>
-            <option value="cf64f9d4-d38a-11e8-b6e2-0c5b8f279a64^DAYS^99DCT">Coronavirus infection, unspecified - B342</option>
-            <option value="cf6520bd-d38a-11e8-b6e2-0c5b8f279a64^DAYS^99DCT">Coronavirus as the cause of diseases classified elsewhere - B972</option>
-            <option value="cf6520f1-d38a-11e8-b6e2-0c5b8f279a64^DAYS^99DCT">Oth coronavirus as the cause of diseases classd elswhr - B9729</option>
-            <option value="cf6a6236-d38a-11e8-b6e2-0c5b8f279a64^DAYS^99DCT">Pneumonia due to SARS-associated coronavirus - J1281</option>
-            <option value="cf6520d7-d38a-11e8-b6e2-0c5b8f279a64^DAYS^99DCT">SARS-associated coronavirus causing diseases classd elswhr - B9721</option>
-        </select>
-    </div>
-    <div class="form-group freetext">
-        <label for="freetext_general">OTHER DIAGNOSIS</label>
-        <input class="form-control" id="freetext_general" name="freetext_general"
-               type="text" data-concept="135d1163-d50a-411c-9ea1-530ca2033e10^OTHER DIAGNOSIS^99DCT">
-    </div>
-    </fieldset>-->
 </form>
 </body>
 <script type="text/javascript">
