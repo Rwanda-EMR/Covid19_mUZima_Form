@@ -98,15 +98,16 @@
         <h3>DISCHARGE INFORMATION</h3>
         <fieldset>
             <div class="form-group">
-                <label for="dischargeDate">Discharge Date:</label>
-                <input class="form-control date_picker Date today-date" id="DischargeDate" name="DischargeDate" type="date">
+                <label for="obs.Discharge date">DISCHARGE DATE(dd/mm/yyyy):</label>
+                <input id="obs.Discharge date" class="form-control" name="obs.Discharge date" type="text"
+                       data-concept="13666^Discharge date^99DCT"/>
             </div>
             <div class="form-group">
                 <fieldset>
                     <h4>DISCHARGE REASON</h4>
                     <label>
                         <input id="obs.QUARANTINE COMPLETED" name="obs.QUARANTINE COMPLETED" type="checkbox"
-                               data-concept="74f8b497-32d4-48c1-b037-0fdcb7fd91d4^QUARANTINE COMPLETED^99DCT" value="74f8b497-32d4-48c1-b037-0fdcb7fd91d4^QUARANTINE COMPLETED^99DCT">
+                               data-concept="1811^QUARANTINE COMPLETED^99DCT" value="107334^QUARANTINE COMPLETED^99DCT">
                         QUARANTINE COMPLETED
                     </label>
                     <label>
@@ -169,10 +170,10 @@
                 <textarea class="form-control" id="obs.FollowInstructions" name="obs.FollowInstructions" type="text"  rows="2" data-concept="107290^FollowInstructions^99DCT"></textarea>
             </div>
 
-            <div class="form-group">
+<!--            <div class="form-group">
                 <label for="returnDate">Next visit Date:</label>
                 <input class="form-control date_picker futureDate next-date" id="returnDate" name="returnDate" type="date">
-            </div>
+            </div>-->
         </fieldset>
     </div>
 </form>
