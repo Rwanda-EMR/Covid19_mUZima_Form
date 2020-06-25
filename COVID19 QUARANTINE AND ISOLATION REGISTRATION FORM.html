@@ -130,93 +130,118 @@
                 <input id="obs.Next of Kin Phone Number" class="form-control" name="obs.Next of Kin Phone Number" type="text"
                        data-concept="99bc2f43-8ab8-405c-b86c-e2566c7e3129^Next of Kin Phone Number^99DCT"/>
             </div>
-
             <div class="form-group">
-                <label for="obs.ADMISSION DATETIME">ADMISSION TIME(dd/MM/yyyy hh-mm):</label>
+                <label for="obs.ADMISSION DATETIME">ADMISSION TIME(dd/MM/yyyy hh-mm):(DAY N0 1)</label>
                 <input id="obs.ADMISSION DATETIME" class="form-control" name="obs.ADMISSION DATETIME" type="text"
-                       data-concept="48a34794-66f3-46c9-91c7-b35d03f4690f^ADMISSION DATETIME^99DCT"/>
+                       data-concept="48a34794-66f3-46c9-91c7-b35d03f4690f^ADMISSION DATETIME^99DCT" required="required"/>
             </div>
         </fieldset>
     </div>
-        <div class="section">
-            <h3>TRAVEL HISTORY</h3>
-            <fieldset>
-               <h3> ABROAD CASE </h3>
-             <div class="form-group">
-                 <label for="obs.Arrival date">ARRIVAL DATE(dd/MM/yyyy):</label>
-                 <input id="obs.Arrival date" class="form-control" name="obs.Arrival date" type="text"
-                        data-concept="364794bd-5d33-419f-8ccf-0aff32a11ceb^Arrival date^99DCT"/>
-             </div>
+    <div class="section">
+        <h3>COVID19 TESTING PROTOCAL</h3>
+        <fieldset>
+            <div><th>QUARAN AND ISOL CENTERS: [CONTROL1 after 6 days]</th> </div>
+        </fieldset>
+        <fieldset>
+            <div><th>TREATMENT CENTERS:</th> </div>
+            <div><th>IF             (+)      [CONTROL 1 after 14 days]</th> </div>
+            <div><th>IF CONTROL 1   (-)      [CONTROL 2 after  1 days]</th> </div>
+            <div><th>IF CONTROL 2   (-)      [DISCHARGE THE PATIENT]</th> </div>
+            <div><th>IF CONTROL     (+)      [Repeat CONTROL after every 3 days until(-)]</th> </div>
+        </fieldset>
+        <fieldset>
+            <div><th>IF PRESUMPTIVE (+)      [CONTROL 1 after  3 days]</th> </div>
+            <div><th>IF CONTROL 1   (+)      [CONTROL 2 after 14 days]</th> </div>
+            <div><th>IF CONTROL     (+)      [Repeat CONTROL after every 3 days until(-)]</th> </div>
+            <div><th>IF CONTROL 1   (-)      [CONTROL 2 after  1 days]</th> </div>
+            <div><th>IF CONTROL 2   (-)      [DISCHARGE THE PATIENT]</th> </div>
+        </fieldset>
+        <fieldset>
+            <div class="form-group">
+                <label>DATE SUPPOSED FOR TAKING NEXT SAMPLE(dd-mm-yyyy)</label>
+                <input class="form-control" id="obs.Datesupposedfortotakesample" name="obs.Datesupposedfortotakesample" type="text"  data-concept="107311^Date supposed for to take sample^99DCT" required="required">
+            </div>
+        </fieldset>
+    </div>
+    <div class="section">
+        <h3>TRAVEL HISTORY</h3>
+        <fieldset>
+            <h3> ABROAD CASE </h3>
+            <div class="form-group">
+                <label for="obs.Arrival date">ARRIVAL DATE(dd/MM/yyyy):</label>
+                <input id="obs.Arrival date" class="form-control" name="obs.Arrival date" type="text"
+                       data-concept="364794bd-5d33-419f-8ccf-0aff32a11ceb^Arrival date^99DCT"/>
+            </div>
             <div>
                 <label for="differential_count">POINT OF ENTRY:</label>
-            <select class="form-control" id="differential_count"
-                    name="differential_count"
-                    data-concept="83b06c83-c866-4bfb-82c7-557eecaacfbb^POINT OF ENTRY^99DCT">
-                <option value="">...</option>
-                <option value="b228e777-a055-4291-be90-a0ee1e16c877^Border^99DCT">Border</option>
-                <option value="940c1873-c493-44c7-8888-4c3c88691bb8^KIA^99DCT">Kigali International Airport</option>
-            </select>
+                <select class="form-control" id="differential_count"
+                        name="differential_count"
+                        data-concept="83b06c83-c866-4bfb-82c7-557eecaacfbb^POINT OF ENTRY^99DCT">
+                    <option value="">...</option>
+                    <option value="b228e777-a055-4291-be90-a0ee1e16c877^Border^99DCT">Border</option>
+                    <option value="940c1873-c493-44c7-8888-4c3c88691bb8^KIA^99DCT">Kigali International Airport</option>
+                </select>
             </div>
             <div class="form-group">
                 <label for="obs.COUNTRY OF ORIGIN">COUNTRY OF ORIGIN:</label>
                 <input id="obs.COUNTRY OF ORIGIN" class="form-control" name="obs.COUNTRY OF ORIGIN" type="text"
                        data-concept="0e566650-6e39-4b9c-8154-683366d3a3ae^COUNTRY OF ORIGIN^99DCT"/>
             </div>
-             <h3> LOCAL CLUSTER </h3>
-              <div class="form-group">
-                  <label for="obs.CASE CONTACT(NAMES)">CASE CONTACT(NAMES):</label>
-                  <input id="obs.CASE CONTACT(NAMES)" class="form-control" name="obs.CASE CONTACT(NAMES)" type="text"
-                         data-concept="e412ed2d-7fb6-4122-b69a-aeb8259a6c9f^CASE CONTACT(NAMES)^99DCT"/>
-              </div>
+            <h3> LOCAL CLUSTER </h3>
+            <div class="form-group">
+                <label for="obs.CASE CONTACT(NAMES)">CASE CONTACT(NAMES):</label>
+                <input id="obs.CASE CONTACT(NAMES)" class="form-control" name="obs.CASE CONTACT(NAMES)" type="text"
+                       data-concept="e412ed2d-7fb6-4122-b69a-aeb8259a6c9f^CASE CONTACT(NAMES)^99DCT"/>
+            </div>
 
-                <div class="form-group">
-                    <label for="obs.LAST DATE OF EXPOSE">LAST DATE OF EXPOSURE(dd/mm/yyyy):</label>
-                    <input id="obs.LAST DATE OF EXPOSE" class="form-control" name="obs.LAST DATE OF EXPOSE" type="text"
-                           data-concept="8d04ca4e-98fb-4961-bf97-1c64382948e1^LAST DATE OF EXPOSE^99DCT"/>
-                </div>
+            <div class="form-group">
+                <label for="obs.LAST DATE OF EXPOSE">LAST DATE OF EXPOSURE(dd/mm/yyyy):</label>
+                <input id="obs.LAST DATE OF EXPOSE" class="form-control" name="obs.LAST DATE OF EXPOSE" type="text"
+                       data-concept="8d04ca4e-98fb-4961-bf97-1c64382948e1^LAST DATE OF EXPOSE^99DCT"/>
+            </div>
 
-                <div>
-                    <label for="differential_count">SITE OF EXPOSURE:</label>
-                    <select class="form-control" id="SITE OF EXPOSURE"
-                            name="SITE OF EXPOSURE"
-                            data-concept="c4f897cb-fd25-459b-9899-0401f8be7ba4^SITE OF EXPOSURE^99DCT">
-                        <option value="">...</option>
-                        <option value="87d44dec-31a9-4843-a7cf-7440e5ac7d18^CHURCHES^99DCT">CHURCHES</option>
-                        <option value="3cded370-26fe-102b-80cb-0017a47871b2^SCHOOLS^99DCT">SCHOOLS</option>
-                        <option value="7db44084-ad91-47a9-9093-08d87a552b67^SALOON^99DCT">SALOON</option>
-                        <option value="f46d630e-2d49-43a5-8d43-e934b7e3b5c0^BAR^99DCT">BAR</option>
-                        <option value="3cdc9916-26fe-102b-80cb-0017a47871b2^AT WORK^99DCT">AT WORK</option>
-                        <option value="fddeccf6-bc83-47cf-975e-eaa4d14de64d^HEALTH FACILITY^99DCT">HEALTH FACILITY</option>
-                    </select>
-                    <div class="form-group freetext">
-                        <label for="freetext_general_ose">OTHER SITE OF EXPOSURE</label>
-                        <input class="form-control" id="freetext_general_ose" name="freetext_general"
-                                  type="text" data-concept="c33b96ee-26ba-4d36-80cc-edbbdb542e96^OTHER SITE OF EXPOSURE^99DCT"></input>
-                    </div>
+            <div>
+                <label for="differential_count">SITE OF EXPOSURE:</label>
+                <select class="form-control" id="SITE OF EXPOSURE"
+                        name="SITE OF EXPOSURE"
+                        data-concept="c4f897cb-fd25-459b-9899-0401f8be7ba4^SITE OF EXPOSURE^99DCT">
+                    <option value="">...</option>
+                    <option value="87d44dec-31a9-4843-a7cf-7440e5ac7d18^CHURCHES^99DCT">CHURCHES</option>
+                    <option value="3cded370-26fe-102b-80cb-0017a47871b2^SCHOOLS^99DCT">SCHOOLS</option>
+                    <option value="7db44084-ad91-47a9-9093-08d87a552b67^SALOON^99DCT">SALOON</option>
+                    <option value="f46d630e-2d49-43a5-8d43-e934b7e3b5c0^BAR^99DCT">BAR</option>
+                    <option value="3cdc9916-26fe-102b-80cb-0017a47871b2^AT WORK^99DCT">AT WORK</option>
+                    <option value="fddeccf6-bc83-47cf-975e-eaa4d14de64d^HEALTH FACILITY^99DCT">HEALTH FACILITY</option>
+                </select>
+                <div class="form-group freetext">
+                    <label for="freetext_general_ose">OTHER SITE OF EXPOSURE</label>
+                    <input class="form-control" id="freetext_general_ose" name="freetext_general"
+                           type="text" data-concept="c33b96ee-26ba-4d36-80cc-edbbdb542e96^OTHER SITE OF EXPOSURE^99DCT"></input>
                 </div>
+            </div>
             <label for="differential_count">LOCATION OF EXPOSURE:</label>
-             <div class="form-group">
-                 <label for="obs.PROVINCE(LOCATION OF EXPOSURE)">PROVINCE:</label>
-                 <input id="obs.PROVINCE(LOCATION OF EXPOSURE)" class="form-control" name="obs.PROVINCE(LOCATION OF EXPOSURE)" type="text"
-                        data-concept="27394056-12ea-4928-bc5c-e5a1e1860f2a^PROVINCE(LOCATION OF EXPOSURE)^99DCT"/>
-              </div>
-              <div class="form-group">
-                  <label for="obs.DISTRICT(LOCATION OF EXPOSURE)">DISTRICT:</label>
-                  <input id="obs.DISTRICT(LOCATION OF EXPOSURE)" class="form-control" name="obs.DISTRICT(LOCATION OF EXPOSURE)" type="text"
-                           data-concept="b5d85769-adbe-48dd-8169-00d3ea2c7c53^DISTRICT(LOCATION OF EXPOSURE)^99DCT"/>
-              </div>
-                <div class="form-group">
-                    <label for="obs.SECTOR(LOCATION OF EXPOSURE)">SECTOR</label>
-                    <input id="obs.SECTOR(LOCATION OF EXPOSURE)" class="form-control" name="obs.SECTOR(LOCATION OF EXPOSURE)" type="text"
-                           data-concept="032d1f2c-2083-4fd4-b1e3-b93d7fb79461^SECTOR(LOCATION OF EXPOSURE)^99DCT"/>
-                </div>
-                <div class="form-group">
-                    <label for="obs.VILLAGE(LOCATION OF EXPOSURE)">VILLAGE</label>
-                    <input id="obs.VILLAGE(LOCATION OF EXPOSURE)" class="form-control" name="obs.VILLAGE(LOCATION OF EXPOSURE)" type="text"
-                           data-concept="2f1c5fb7-5093-42b7-8f17-6809c5f10951^VILLAGE(LOCATION OF EXPOSURE)^99DCT"/>
-                </div>
-            </fieldset>
-        </div>
+            <div class="form-group">
+                <label for="obs.PROVINCE(LOCATION OF EXPOSURE)">PROVINCE:</label>
+                <input id="obs.PROVINCE(LOCATION OF EXPOSURE)" class="form-control" name="obs.PROVINCE(LOCATION OF EXPOSURE)" type="text"
+                       data-concept="27394056-12ea-4928-bc5c-e5a1e1860f2a^PROVINCE(LOCATION OF EXPOSURE)^99DCT"/>
+            </div>
+            <div class="form-group">
+                <label for="obs.DISTRICT(LOCATION OF EXPOSURE)">DISTRICT:</label>
+                <input id="obs.DISTRICT(LOCATION OF EXPOSURE)" class="form-control" name="obs.DISTRICT(LOCATION OF EXPOSURE)" type="text"
+                       data-concept="b5d85769-adbe-48dd-8169-00d3ea2c7c53^DISTRICT(LOCATION OF EXPOSURE)^99DCT"/>
+            </div>
+            <div class="form-group">
+                <label for="obs.SECTOR(LOCATION OF EXPOSURE)">SECTOR</label>
+                <input id="obs.SECTOR(LOCATION OF EXPOSURE)" class="form-control" name="obs.SECTOR(LOCATION OF EXPOSURE)" type="text"
+                       data-concept="032d1f2c-2083-4fd4-b1e3-b93d7fb79461^SECTOR(LOCATION OF EXPOSURE)^99DCT"/>
+            </div>
+            <div class="form-group">
+                <label for="obs.VILLAGE(LOCATION OF EXPOSURE)">VILLAGE</label>
+                <input id="obs.VILLAGE(LOCATION OF EXPOSURE)" class="form-control" name="obs.VILLAGE(LOCATION OF EXPOSURE)" type="text"
+                       data-concept="2f1c5fb7-5093-42b7-8f17-6809c5f10951^VILLAGE(LOCATION OF EXPOSURE)^99DCT"/>
+            </div>
+        </fieldset>
+    </div>
 
 
     <div class="section">
